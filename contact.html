@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — JTECH</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/index.html">JTECH</a>
+      <button id="nav-toggle-4" aria-label="Toggle navigation">☰</button>
+      <nav id="site-nav-4" class="nav">
+        <a href="/index.html">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/services.html">Services</a>
+        <a href="/contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Contact Us</h1>
+    <form id="contact-form" novalidate>
+      <label>
+        Name
+        <input type="text" id="name" name="name" required minlength="2" />
+      </label>
+      <label>
+        Email
+        <input type="email" id="email" name="email" required />
+      </label>
+      <label>
+        Message
+        <textarea id="message" name="message" required minlength="10"></textarea>
+      </label>
+      <button type="submit" class="btn">Send Message</button>
+      <p id="form-status" role="status" aria-live="polite"></p>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year-4"></span> JTECH LTD</p>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
